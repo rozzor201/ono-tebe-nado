@@ -6,6 +6,8 @@
 .header__menu {
   margin-top: 92px;
   margin-bottom: 92px;
+  padding-right: 26px;
+  padding-left: 26px;
   width: 1052px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -18,8 +20,8 @@
   font-weight: 400;
   line-height: 22px;
   list-style: circle;
-  gap: 33px;
-  margin: 44px 19.5px 40px 26.5px;
+  gap: 32px;
+  margin: 44px 19.5px 40px 0px;
 }
 
 .header_no_decoration {
@@ -37,23 +39,18 @@
   flex-direction: column;
   justify-content: center;
   color: rgb(0, 0, 0);
-  font-family: "Raleway" sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   list-style: none;
+  font-style: normal;
 }
 
 .info_type_header {
-  padding-left: 190px;
-}
-
-.header__address {
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24.3px;
-  text-align: left;
+display: flex;
+justify-content: end;
+align-items: center;
 }
 
 .cover {
@@ -80,7 +77,7 @@
   display: block;
   width: 100%;
   color: rgb(255, 255, 255);
-  font-family: "Raleway" sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 100px;
   font-weight: 700;
   line-height: 115%;
@@ -141,7 +138,7 @@
   height: 51px;
   border: 1px solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
-  font-family: "Raleway" sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 26px;
@@ -297,9 +294,10 @@
   line-height: 24px;
 }
 
-.about__text_space {
-  margin-bottom: 24px;
+.about__text p:first-child{
+padding-bottom: 25px;
 }
+
 
 .footer {
   display: flex;
@@ -310,14 +308,14 @@
 .footer__column {
   width: 1000px;
   display: grid;
-  grid-template-columns: auto 149px auto;
-  gap: 185px;
+  grid-template-columns: 1fr 1fr  1fr;
+  min-height: 622px;
 }
 
 .footer__menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
   color: rgb(0, 0, 0);
   font-size: 18px;
   font-weight: 400;
@@ -331,9 +329,9 @@
 
 .footer__links {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: start;
-  gap: 46px;
+  gap: 48px;
 }
 
 .footer_logo {
